@@ -15,10 +15,11 @@ match priority:
                         reminder = f"Reminder: Your task '{task}' has an unknown priority."
                         if time_bound == "yes":
                             reminder += "This task requires immediate attention today!"
-                            
+
                             reminder = f"Reminder: Your task '{task}' has an unknown priority."
                             # Customized Reminder
-                            print(reminder)
+                            print("reminder")
+                            
 
                     
 
