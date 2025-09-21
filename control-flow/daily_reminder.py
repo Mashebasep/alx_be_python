@@ -14,10 +14,11 @@ match priority:
                         match priority:
                             case "low":
                                 message = f"Reminder: '{task}' has unknown priority level"
+                                # Customized Reminder
+                                reminder = f"Reminder: Your task '{task}' has {priority} priority."
 
                                 if time_bound == "yes" and "high priority" in message:
                                     message += "that requires immediate attention today!"
-                                    # print a customized reminder
                                     print(reminder)
 
 
