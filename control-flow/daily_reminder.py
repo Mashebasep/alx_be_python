@@ -17,8 +17,9 @@ match priority:
 
                                 if time_bound == "yes" and "high priority" in message:
                                     message += "that requires immediate attention today!"
+                                    # print the final customized reminder
                                     print(reminder)
-                                    
+
 
 
 
