@@ -1,9 +1,9 @@
-# Prompt user for single task ad details
-task = input("Enter your task: ")
+# Prompt user single task and details
+task = input("Enter you task: ")
 priority = input("Priority (high/medium/low): ").lower()
 time_bound = input("Is it time-bound? (yes/no): ").lower()
-# build the reminder message
-reminder = f"Reminder: '{task}' is "
+# Start building the reminder message
+reminder = f"Reminder: '{task}' is"
 # Match case for priority
 match priority:
     case "high":
@@ -16,6 +16,7 @@ match priority:
         reminder += f"a task with unknown priority ({priority})"
         # Add time-bound
         if time_bound == "yes":
-            reminder += "that requires immediate attention today!"
+            reminder += " that requires immediate attention today!"
+            # Print message
             print(reminder)
             
