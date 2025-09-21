@@ -11,13 +11,13 @@ match priority:
     case "low":
         reminder = f"Reminder: '{task}' is low priority."
     case _:
-        reminder = f"Reminder: '{task}' has an unknown priority."
+        reminder = f"Reminder: '{task}' has an unknown priority"
         # Modify reminder if task is time-bound
         if time_bound == "yes":
             reminder += "that requires immediate attention today!"
             # Print reminder
             print(reminder)
-            
+
 
 
 
