@@ -1,7 +1,7 @@
 # Prompt for single task and details
 task = input("Enter your task: ")
 priority = input("Priority (high/medium/low): ").lower()
-time_bound = input("Is it time-bound? (yes/no): ").lowe()
+time_bound = input("Is it time-bound? (yes/no): ").lower()
 # Start building the reminder message
 reminder = f"Reminder: '{task}' is "
 # Match case for priority
