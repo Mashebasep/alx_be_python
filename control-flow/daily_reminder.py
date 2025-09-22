@@ -1,7 +1,7 @@
 # Ask user for task details
 task = input("Enter your task: ")
-priority = input("Enter the task's priority (high/medium/low):").strip().lower()
-time_bound = input("Is it time-bound? (yes/no):").strip().lower()
+priority = input("Enter the task's priority (high/medium/low):").lower()
+time_bound = input("Is it time-bound? (yes/no):").lower()
 # Match Case for priority + time-bound
 match priority:
     case "high":
@@ -23,6 +23,6 @@ match priority:
         reminder = f"Task '{task}' has an UNKNOWN priority."
         # Print Customized Reminder
         print(reminder)
-        
+
             
 
