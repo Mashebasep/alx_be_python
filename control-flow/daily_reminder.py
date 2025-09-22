@@ -5,27 +5,25 @@ time_bound = input("Is it time-bound? (yes/no): ").lower()
 # Match Case for priority + time-bound
 match priority:
     case "high":
-        if time_bound == "yes":
-            reminder = f"High priority task '{task}' requires immediate attention today!"
-        else:
-            reminder = f"High priority task '{task}' should be done soon."
+        reminder_message = f"'{task}' is a **high** priority task"
     case "medium":
-        if time_bound == "yes":
-            reminder = f"Medium priority task '{task}' requires immediate attention today!"
-        else:
-            reminder = f"Medium priority task '{task}' should be planned for near future."
+        reminder_message = f" '{task}' is a **medium** priority task"
     case "low":
-        if time_bound == "yes":
-            reminder = f"Low priority task '{task}' requires immediate attention today!"
-        else:
-            reminder = f"Low priority task '{task}' can be done when you have free time."
+        reminder_message = f"'{task}' is a **low** priority task. consider completing it when you have free time"
     case _:
-        reminder = f"Task '{task}' has an UNKNOWN priority."
-        # If statement for time-bound
-        if time_bound == "yes":
-            reminder += "That requires immediate attention today!"
-            # Provide Customized Reminder
-            print(reminder)
+        reminder_message = f"'{task}' is a task with an **Unspecified** priority"
+
+        if time_bound == "yes" and priority in ["high", "medium"]:
+            remider_message = f"{reminder_message} that requires immediate attention today!"
+        elif time_bound == "yes" and priority == "low":
+            reminder_message = f"'{task}' is a **low** priority task, but it requires attention today!"
+        elif time_bound == "no" and priority in ["high","medium"]:
+            reminder_message = f"(reminder_message)."
+
+            print(f"/nReminder: {reminder_message}")
+            
+
+
 
 
             
