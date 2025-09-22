@@ -16,8 +16,11 @@ match priority:
         reminder = f"Reminder: '{task}' has ({priority_level}) priority."
         if time_bound == "yes"and priority == "high":
             reminder += " that requires immediate attention today!"
-            print(reminder)
+            print("%s%s%s" % ('Reminder:' , task, 'is high priority and requires immediate attention today!'))
+        else:
+            print(f"Reminder: '{task}' has ({priority})  priority.")
             
+
 
 
 
