@@ -21,8 +21,12 @@ match priority:
             reminder = f"Low priority task '{task}' can be done when you have free time."
     case _:
         reminder = f"Task '{task}' has an UNKNOWN priority."
-        # Print Customized Reminder
-        print(reminder)
+        # If statement for time-bound
+        if time_bound == "yes":
+            reminder += "That requires immediate attention today!"
+            # Provide Customized Reminder
+            print(reminder)
+            
 
             
 
