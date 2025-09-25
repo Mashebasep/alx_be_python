@@ -17,7 +17,6 @@ def perform_operation(num1, num2, operation):
         operation = input("Enter the operation (add, subtract, multiply, divide): ").strip().lower()
         result = perform_operation(num1, num2, operation)
         print(f"Result: {result}")
-        if __name__=="__main__":
-            main()
-            
+        
+
     
