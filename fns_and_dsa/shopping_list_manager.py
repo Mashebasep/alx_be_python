@@ -34,14 +34,14 @@ def display_menu():
                                     while True:
                                         display_menu()
                                         # Asking for a number as input       
-                                        choice = int(input("Enter a number: "))
-                                        if choice == 1:
+                                        num = float(input("Enter a number: "))
+                                        if num == 1:
                                             add_item(shopping_list)
-                                        elif choice == 2:
+                                        elif num == 2:
                                             remove_item(shopping_list)
-                                        elif choice == 3:
+                                        elif num == 3:
                                             view_list(shopping_list)
-                                        elif choice == 4:
+                                        elif num == 4:
                                             print("Goodbye!")
                                             break
                                         else:
