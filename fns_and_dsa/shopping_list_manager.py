@@ -33,14 +33,35 @@ def display_menu():
                                     shopping_list = []
                                     while True:
                                         display_menu()
-                                        # Enter input       
+                                        # Get the user choice       
                                         choice = input("Enter your choice: ")
                                         if choice == 1:
-                                            add_item(shopping_list)
+                                            item = input("Enter the item to add: ").strip()
+                                            if item:
+                                                shopping_list.append(item)
+                                                print(f"Added '{item}' to the list.")
+                                            else:
+                                                    print("Item cannot be empty.")
+
                                         elif choice == 2:
-                                            remove_item(shopping_list)
+                                            if not shopping_list:
+                                                print("The shopping list is empty.")
+                                                continue
+                                            item = input("Enter the item to remove: ").strip()
+                                            if item in shopping_list:
+                                                shopping_list.remove(item)
+                                                print(f"Removed '{item}' from the list.")
+                                            else:
+                                                print
                                         elif choice == 3:
-                                            view_list(shopping_list)
+                                            if shopping_list:
+                                                print("/nYour Shopping List:")
+                                                for i, item in enumerate(shopping_list, start=1):
+                                                    print(f"{i}. {item}")
+                                                else:
+                                                    print("Your shopping list is currently empty.")
+                                                    continue
+                                                
                                         elif choice == 4:
                                             print("Goodbye!")
                                             break
