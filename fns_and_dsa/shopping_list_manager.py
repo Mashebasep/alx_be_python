@@ -33,7 +33,8 @@ def display_menu():
                                     shopping_list = []
                                     while True:
                                         display_menu()
-                                        choice = int(input("Enter your choice: "))
+                                        # Asking for a number as input       
+                                        choice = int(input("Enter a number: "))
                                         if choice == 1:
                                             add_item(shopping_list)
                                         elif choice == 2:
