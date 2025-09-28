@@ -4,12 +4,13 @@ CELSIUS_TO_FAHRENHEIT_FACTOR = 9/5
 FAHRENHEIT_OFFSET = 32
 
 def convert_to_celcius(fahrenheit):
-    return (fahrenheit - FAHRENHEIT_OFFSET) * FAHRENHEIT_TO_CELSIUS_FACTOR
+    return (fahrenheit - 32) * FAHRENHEIT_TO_CELSIUS_FACTOR
 
 def convert_to_fahrenheit(celsius):
-    return (celsius - CELSIUS_TO_FAHRENHEIT_FACTOR) + FAHRENHEIT_OFFSET
+    return (celsius - CELSIUS_TO_FAHRENHEIT_FACTOR) + 32
 
 def validate_temperature_input(input_str):
+  
     if input_str.replace('.', '',1).replace('-', '', 1).isdigit():
         return float(input_str)
     else:
@@ -39,7 +40,7 @@ def validate_temperature_input(input_str):
                     print("Invalid temperature. Please enter a numeric value.")
             else:
                 print("Invalid temperature. Please enter 1 or 2.")
-                
+
 
 
 
