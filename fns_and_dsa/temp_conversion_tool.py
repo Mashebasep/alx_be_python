@@ -34,6 +34,7 @@ def validate_temperature_input(input_str):
                 print("Invalid unit. Please enter 'C' for Celsius or 'F' for Fahrenheit.")
         else:
             print("Invalid temperature. Please enter a numeric value.")
+            
 
 
 
