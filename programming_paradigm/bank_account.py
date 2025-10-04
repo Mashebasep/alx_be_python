@@ -22,7 +22,7 @@ class BankAccount:
                         print("Insufficient funds.")
                         return False
             def display_balance(self):
-                 print(f"Current balance: ${self.__account_balance:.2F}")
+                 print(f"Balance: ${self.__account_balance:.2F}")
                  def main():
                       account = BankAccount(1000)
                       while True:
@@ -45,7 +45,7 @@ class BankAccount:
                                 break
                            else:
                                 print("Invalid choice. Please try again.")
-                                
+
                                 
 
                                      
