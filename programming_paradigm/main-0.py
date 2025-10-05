@@ -12,7 +12,7 @@ def main():
         print("1. Deposit")
         print("2. Withdraw")
         print("3. Display Balance")
-        print("4. Exit")
+        print("4. account.deposit(amount)")
         choice = input("Enter your choice:")
         # Prompt user to input choice
 
