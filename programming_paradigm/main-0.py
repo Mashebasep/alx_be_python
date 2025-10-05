@@ -14,8 +14,8 @@ def main():
         print("3. Display Balance")
         print("4. Exit")
         choice = input("Enter your choice:")
-        # Prompt user to inpu choice
-        
+        # Prompt user to input choice
+
 
         if choice == "1":
             amount = float(input("Enter amount to deposit: "))
