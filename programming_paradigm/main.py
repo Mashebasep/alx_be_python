@@ -5,7 +5,5 @@ def main():
         print("Usage: python main.py <numerator> <denominator>")
         sys.exit(1)
         numerator = sys.argv[1]
-        denomitor = sys.ar[2]
-        # Perform the division
-        result = safe_divide(numerator, denomitor)
-        print(result)
+        denomitor = sys.argv[2]
+        print(safe_divide(numerator, denomitor))
