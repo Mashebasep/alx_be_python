@@ -1,8 +1,8 @@
 def safe_divide(numerator, denominator):
      try:
          # Convert inputs
-         num = float(10)
-         denom = float(5)
+         num = float(denominator)
+         denom = float(numerator)
          # Perform division
          result = num / denom
          return f"The result of the division is {result}"
