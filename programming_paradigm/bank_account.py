@@ -23,8 +23,8 @@ class BankAccount:
                         account = BankAccount(250)
                         account.display_balance()
 
-                        account.deposit(100)
-                        account.withdraw(50)
+                        account.deposit(50)
+                        account.withdraw(20)
                         account.display_balance()
 
 
