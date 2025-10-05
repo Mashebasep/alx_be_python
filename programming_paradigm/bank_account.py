@@ -6,7 +6,7 @@ class BankAccount:
              if amount > 0:
                   self.__account_balance += amount
                   print(f"Deposited: ${amount}")
-                  print(f"Current: ${self.__account_balance}")
+                  print(f"Current: ${self.__account_balance:.2F}")
              else:
                   print("Invalid deposit amount")
                   def withdraw(self, amount):
