@@ -13,7 +13,7 @@ def main():
         sys.exit(1)
 
         if command == "deposit" and amount is not None:
-            account.deposit(67)
+            account.deposit(amount)
             print(f"Deposited: ${amount}")
             account.display_balance()
         elif command == "withdraw" and amount is not None:
