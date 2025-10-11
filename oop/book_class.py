@@ -10,5 +10,4 @@ class Book:
             def __repr__(self):
                 return f"Book('{self.title}', '{self.author}', {self.year})"
             print(f"title: {self.title}, author: {self.author}, year: {self.year}")
-            print(repr(Book))
-            del Book
+
