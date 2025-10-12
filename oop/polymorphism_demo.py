@@ -1,7 +1,7 @@
 import math
 class Shape:
       def area(self):
-          raise NotImplementedError("Subclass must implemtn abstract method")
+          raise NotImplementedError("Subclass must implement abstract method")
 class Rectangle(Shape): 
                def __init__(self, length, width):
                    self.length = length
