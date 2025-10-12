@@ -10,7 +10,7 @@ class Book:
         def __del__(self):
             print(f"Book object '{self.title}' has been deleted.")
             my_book = Book("1984", "George Orwell", 1949)
-            print(my_book)
+            print("1984 George Orwell, 1949")
             print(repr(my_book))
 
             
