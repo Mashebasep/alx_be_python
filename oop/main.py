@@ -2,8 +2,6 @@ from polymorphism_demo import Shape,Rectangle, Circle
 def main():
     shapes = [Rectangle(10, 5), Circle(7)] 
     for shape in shapes:
-        print(f"The area of the is: 50")
-        print(f"The area of the Circle is: 153.938040")
-
-
-
+        print(f"The area of the {shape.__class__.__name__} is: {shape.area()}")
+        print("Running main function...")
+        
