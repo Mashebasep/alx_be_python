@@ -8,10 +8,8 @@ class Book:
         def __repr__(self):
                 return f"Book(title='{self.title}', author='{self.author}', year={self.year})"
         def __del__(self):
-            print(f"Book object '{self.title}' has been deleted.")
-            my_book = Book("1984", "George Orwell", 1949)
-            print("1984 George Orwell, 1949")
-            print(repr(my_book))
+            print(f"Deleting {self.title}")
+            
 
             
 
