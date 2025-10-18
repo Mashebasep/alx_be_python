@@ -25,4 +25,3 @@ class Book:
                                         print("Library Collection:")
                                         for book in self.books:
                                             print(f" - {book}")
-                                            
