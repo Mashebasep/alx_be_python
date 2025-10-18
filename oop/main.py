@@ -10,4 +10,6 @@ def main():
     my_library.add_book(paper_novel)
     # List all books in the library
     my_library.list_books()
+    # Print book
+    PrintBook = Book("Pride and Prejudice", "Jane Austen")
     
